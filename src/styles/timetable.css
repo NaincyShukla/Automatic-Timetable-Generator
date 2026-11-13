@@ -1,0 +1,119 @@
+.timetable-section{
+    padding:100px 50px;
+    background:white;
+}
+
+.browser{
+    max-width:1200px;
+    margin:auto;
+    background:white;
+    border:1px solid #e5e7eb;
+    border-radius:24px;
+    overflow:hidden;
+    box-shadow:0 15px 40px rgba(0,0,0,.06);
+}
+
+.browser-top{
+    height:50px;
+    background:#f9fafb;
+    border-bottom:1px solid #e5e7eb;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    position:relative;
+}
+
+.dots{
+    position:absolute;
+    left:20px;
+    display:flex;
+    gap:8px;
+}
+
+.red,
+.yellow,
+.green{
+    width:12px;
+    height:12px;
+    border-radius:50%;
+}
+
+.red{
+    background:#ff5f57;
+}
+
+.yellow{
+    background:#febc2e;
+}
+
+.green{
+    background:#28c840;
+}
+
+.url{
+    color:#6b7280;
+    font-size:.9rem;
+}
+
+.table{
+    display:grid;
+    grid-template-columns:repeat(5,1fr);
+    gap:20px;
+    padding:30px;
+}
+
+.header{
+    background:#f3f4f6;
+    color:#111827;
+    text-align:center;
+    padding:15px;
+    border-radius:12px;
+    font-weight:600;
+}
+
+.subject{
+    background:white;
+    border:1px solid #e5e7eb;
+    border-radius:12px;
+    padding:20px;
+    text-align:center;
+    font-weight:600;
+    transition:.3s;
+}
+
+.subject:hover{
+    transform:translateY(-4px);
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+}
+
+.math{
+    border-left:4px solid #7c3aed;
+}
+
+.physics{
+    border-left:4px solid #3b82f6;
+}
+
+.chemistry{
+    border-left:4px solid #f59e0b;
+}
+
+.english{
+    border-left:4px solid #ec4899;
+}
+
+.history{
+    border-left:4px solid #22c55e;
+}
+
+
+@media(max-width:900px){
+
+    .table{
+        grid-template-columns:1fr;
+    }
+
+    .timetable-section{
+        padding:60px 20px;
+    }
+}

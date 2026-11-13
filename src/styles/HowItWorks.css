@@ -1,0 +1,374 @@
+.guide{
+    max-width:1200px;
+
+    margin:100px auto;
+
+    padding:80px 40px;
+
+    position:relative;
+
+    text-align:center;
+
+    overflow:hidden;
+
+    background:#faf5ff;
+
+    border:1px solid #e9d5ff;
+
+    border-radius:25px;
+}
+.guide-container{
+    max-width:1200px;
+    margin:auto;
+}
+.current-step-title{
+    color:#7c3aed;
+    font-weight:600;
+    margin-top:10px;
+}
+
+.guide-layout{
+
+    max-width:1200px;
+
+    margin:auto;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:space-between;
+
+    gap:50px;
+}
+/* Stars */
+
+.guide::before{
+    content:"";
+    position:absolute;
+    inset:0;
+
+    background-image:
+      radial-gradient(circle, rgba(255,255,255,.8) 1px, transparent 1px),
+      radial-gradient(circle, rgba(255,255,255,.5) 1px, transparent 1px);
+
+    background-size:
+      120px 120px,
+      120px 120px;
+
+    background-position:
+      0 0,
+      60px 60px;
+
+    opacity:.5;
+    pointer-events:none;
+    display:none;
+}
+
+.guide h2{
+    font-size:3.5rem;
+    font-weight:800;
+    margin-bottom:20px;
+    position:relative;
+    z-index:2;
+    color:#111827
+}
+
+.guide-text{
+    color:#a1a1aa;
+    margin-bottom:70px;
+    position:relative;
+    z-index:2;
+}
+
+.guide-text span{
+    border:1px solid #7c3aed;
+    padding:4px 10px;
+    border-radius:8px;
+    color:#a78bfa;
+}
+
+/* Track */
+
+.game-track{
+    flex:1;
+
+    height:250px;
+
+    background:white;
+
+    border:1px solid #e9d5ff;
+
+    border-radius:25px;
+
+    position:relative;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:0 40px;
+}
+
+.step-info{
+
+    flex:1;
+
+    text-align:left;
+}
+.step-info h4{
+
+    font-size:.9rem;
+
+    letter-spacing:2px;
+
+    margin-bottom:15px;
+}
+.step-info h3{
+    font-size:2.2rem;
+    color:#111827;
+    margin-bottom:15px;
+}
+.step-info p{
+    font-size:1rem;
+    line-height:1.7;
+    color:#6b7280;
+    max-width:400px;
+}
+
+
+.game-track::before{
+    content:"";
+
+    position:absolute;
+
+    left:12%;
+    right:12%;
+
+    top:50%;
+
+    height:3px;
+
+    background:#7c3aed;
+
+    z-index:0;
+}
+
+
+
+/* Step Wrapper */
+
+.step-wrapper{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    gap:10px;
+}
+
+/* Labels */
+
+.step-label{
+
+    padding:6px 14px;
+
+    border-radius:12px;
+
+    font-size:.75rem;
+
+    font-weight:600;
+
+    background:rgba(255,255,255,.03);
+}
+
+/* Label Colors */
+
+.resource-label{
+    color:#8b5cf6;
+    border:1px solid #8b5cf6;
+}
+
+.constraints-label{
+    color:#3b82f6;
+    border:1px solid #3b82f6;
+}
+
+.timetable-label{
+    color:#ec4899;
+    border:1px solid #ec4899;
+}
+
+.download-label{
+    color:#22c55e;
+    border:1px solid #22c55e;
+}
+
+/* Platform Buttons */
+
+.platform{
+
+    width:170px;
+    height:70px;
+
+    border-radius:18px;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    font-size:.9rem;
+    font-weight:600;
+
+    position:relative;
+    z-index:2;
+
+    background:white;
+
+    transition:.3s;
+}
+
+/* Inactive Step Colors */
+
+.resource{
+    border:2px solid #8b5cf6;
+    color:#8b5cf6;
+}
+
+.constraints{
+    border:2px solid #3b82f6;
+    color:#3b82f6;
+}
+
+.timetable{
+    border:2px solid #ec4899;
+    color:#ec4899;
+}
+
+.download{
+    border:2px solid #22c55e;
+    color:#22c55e;
+}
+
+/* Active Platform */
+.platform.active{
+    color:white;
+    transform:translateY(-5px);
+}
+.resource.active{
+    background:#8b5cf6;
+    color:white;
+}
+
+.constraints.active{
+    background:#3b82f6;
+    color:white;
+}
+
+.timetable.active{
+    background:#ec4899;
+    color:white;
+}
+
+.download.active{
+    background:#22c55e;
+    color:white;
+}
+
+.player{
+    position:absolute;
+    top:40px;
+    width:55px;
+    height:auto;
+    transition:left .6s ease;
+    z-index:10;
+}
+
+.jump{
+    animation:marioJump 0.6s ease;
+}
+
+@keyframes marioJump{
+  
+
+    
+     0%{
+        transform:translateY(0);
+    }
+
+    25%{
+        transform:translateY(-25px);
+    }
+
+    50%{
+        transform:translateY(-60px);
+    }
+
+    75%{
+        transform:translateY(-25px);
+    }
+
+    100%{
+        transform:translateY(0);
+    }
+}
+
+/* Card */
+
+.step-card{
+
+    max-width:1200px;
+
+    margin:30px auto 0;
+
+    padding:40px;
+
+    
+    border-radius:24px;
+
+     background:#f3e8ff;
+    border:1px solid #d8b4fe;
+    text-align:left;
+}
+
+.step-card h3{
+    color:white;
+    font-size:2rem;
+    margin-bottom:15px;
+}
+
+.step-card p{
+    color:#a1a1aa;
+    line-height:1.8;
+}
+
+.step-card h4{
+    font-size:.85rem;
+    margin-bottom:10px;
+    letter-spacing:2px;
+}
+
+.step-card h3{
+    font-size:2rem;
+    margin-bottom:15px;
+}
+
+.step-card p{
+    color:#a1a1aa;
+    line-height:1.8;
+}
+
+/* Mobile */
+
+@media(max-width:900px){
+
+    .guide-layout{
+
+        flex-direction:column;
+    }
+
+    .step-info{
+
+        text-align:center;
+    }
+}

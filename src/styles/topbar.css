@@ -1,0 +1,46 @@
+.topbar{
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    margin-bottom:40px;
+}
+
+.topbar h1{
+
+    font-size:32px;
+    color:#111827;
+}
+
+.topbar p{
+
+    margin-top:8px;
+    color:#6b7280;
+}
+
+.profile{
+
+    display:flex;
+    align-items:center;
+}
+
+.avatar{
+
+    width:55px;
+    height:55px;
+
+    background:#000000;
+
+    color:white;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    border-radius:50%;
+
+    font-size:24px;
+
+    font-weight:bold;
+}

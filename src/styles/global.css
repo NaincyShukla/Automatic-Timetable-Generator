@@ -1,0 +1,85 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    background:#f8f8ee;
+    color:#000000;
+    font-family:'Poppins',sans-serif;
+}
+
+section{
+    background:white;
+}
+a{
+    text-decoration:none;
+    color:rgb(0, 0, 0);
+}
+body.dark{
+
+    background:#0f172a;
+
+    color:white;
+
+}
+
+body.dark .sidebar{
+
+    background:#111827;
+
+}
+
+body.dark .dashboard-content{
+
+    background:#0f172a;
+
+}
+
+body.dark .setting-card,
+
+body.dark .dashboard-card,
+
+body.dark .teacher-table,
+
+body.dark .subject-table,
+
+body.dark .location-table,
+
+body.dark .division-table{
+
+    background:#1f2937;
+
+    color:white;
+
+}
+
+body.dark input,
+
+body.dark textarea,
+
+body.dark select{
+
+    background:#374151;
+
+    color:white;
+
+    border:1px solid #4b5563;
+
+}
+
+body.dark h1,
+
+body.dark h2,
+
+body.dark h3,
+
+body.dark p,
+
+body.dark label{
+
+    color:white;
+
+}
+

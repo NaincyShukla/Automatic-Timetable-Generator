@@ -1,0 +1,118 @@
+.sidebar{
+    width:260px;
+    height:100vh;
+    background:#e7eaee;
+    border-right:1px solid #e5e7eb;
+
+    display:flex;
+    flex-direction:column;
+
+    position:fixed;
+    left:0;
+    top:0;
+}
+
+.logo{
+    display:flex;
+    align-items:center;
+    gap:12px;
+
+    padding:25px;
+}
+
+.logo-icon{
+    width:42px;
+    height:42px;
+
+    background:#000000;
+
+    color:white;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    border-radius:12px;
+
+    font-size:22px;
+}
+
+.logo h2{
+
+    font-size:22px;
+    color:#111827;
+}
+
+.menu{
+
+    display:flex;
+    flex-direction:column;
+
+    padding:10px;
+
+    gap:8px;
+
+    margin-top:10px;
+}
+
+.menu-item{
+
+    text-decoration:none;
+
+    color:#4b5563;
+
+    display:flex;
+    align-items:center;
+
+    
+
+    gap:12px;
+
+    padding:14px 18px;
+
+    border-radius:12px;
+
+    transition:.3s;
+
+    font-weight:500;
+}
+
+.menu-item:hover{
+
+    background:#ede9fe;
+
+    color:#000000;
+}
+
+.menu .active{
+
+    background:#000000;
+
+    color:white;
+}
+
+.logout-btn{
+
+    margin:auto 20px 25px;
+
+    height:48px;
+
+    border:none;
+
+    border-radius:12px;
+
+    background:#000000;
+
+    color:white;
+
+    font-size:15px;
+
+    cursor:pointer;
+
+    transition:.3s;
+}
+
+.logout-btn:hover{
+
+    background:#000000;
+}

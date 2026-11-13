@@ -1,0 +1,29 @@
+body{
+
+    background:#cfe4fa;
+}
+
+.dashboard-layout{
+
+    display:flex;
+}
+
+.dashboard-content{
+
+    margin-left:260px;
+
+    width:100%;
+
+    padding:40px;
+}
+.stats-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(4,1fr);
+
+    gap:24px;
+
+    margin:30px 0;
+
+}

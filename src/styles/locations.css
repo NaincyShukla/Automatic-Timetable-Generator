@@ -1,0 +1,126 @@
+/* ===========================
+   LOCATIONS PAGE
+=========================== */
+
+.locations-page{
+    padding:40px;
+    background:#f8fafc;
+    min-height:100vh;
+}
+
+/* Header */
+
+.locations-header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:35px;
+}
+
+.locations-header h1{
+    font-size:42px;
+    margin-bottom:8px;
+}
+
+.locations-header p{
+    color:#6b7280;
+    font-size:17px;
+}
+
+.location-btn{
+    background:black;
+    color:white;
+    border:none;
+    padding:15px 28px;
+    border-radius:12px;
+    cursor:pointer;
+    font-size:16px;
+    font-weight:600;
+}
+
+/* Cards */
+
+.location-cards{
+    display:flex;
+    gap:25px;
+    margin-bottom:35px;
+}
+
+.location-card{
+    width:250px;
+    background:white;
+    border-radius:18px;
+    padding:25px;
+    display:flex;
+    gap:20px;
+    align-items:center;
+    box-shadow:0 8px 20px rgba(0,0,0,.06);
+}
+
+.location-icon{
+    width:65px;
+    height:65px;
+    background:#ede9fe;
+    border-radius:15px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:30px;
+}
+
+.location-card h2{
+    font-size:36px;
+    margin:0;
+}
+
+.location-card p{
+    margin-top:5px;
+    color:#6b7280;
+}
+
+/* Search */
+
+.location-search{
+    margin-bottom:35px;
+}
+
+.location-search input{
+    width:100%;
+    max-width:600px;
+    padding:16px 20px;
+    border:1px solid #ddd;
+    border-radius:14px;
+    background:white;
+    outline:none;
+    font-size:16px;
+}
+
+/* Table */
+
+.location-table{
+    width:100%;
+    border-collapse:collapse;
+    background:white;
+    border-radius:18px;
+    overflow:hidden;
+    box-shadow:0 8px 20px rgba(0,0,0,.06);
+}
+
+.location-table thead{
+    background:#000000;
+    color:white;
+}
+
+.location-table th{
+    padding:18px;
+    text-align:left;
+}
+
+.location-table td{
+    padding:18px;
+    border-bottom:1px solid #eef2f7;
+}
+
+.location-table tbody tr:hover{
+    background:#fafafa;
+}
