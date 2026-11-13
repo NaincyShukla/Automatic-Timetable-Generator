@@ -141,3 +141,11 @@ Actual environment files containing credentials are excluded from version contro
 
 
 B.Tech – Computer Engineering
+
+
+## License
+
+This project is licensed under the MIT License.
+See the [LICENSE](LICENSE) file for details.
+
+Copyright (c) 2026 Naincy Shukla
