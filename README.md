@@ -1,16 +1,143 @@
-# React + Vite
+# Automatic Timetable Generator
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+An intelligent web-based timetable generation system designed to simplify academic scheduling for colleges and educational institutions.
 
-Currently, two official plugins are available:
+## Overview
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+The Automatic Timetable Generator helps colleges manage academic scheduling efficiently by organizing teachers, subjects, divisions, and classrooms while generating optimized timetables automatically.
 
-## React Compiler
+## Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **Automatic Timetable Generation** – Generate academic timetables automatically.
+- **Teacher Management** – Manage teacher information and availability.
+- **Subject Management** – Organize subjects for academic scheduling.
+- **Division Management** – Manage divisions and their academic requirements.
+- **Classroom Management** – Manage classroom and location details.
+- **Dashboard** – View timetable-related statistics and information.
+- **Authentication** – Secure login and account management.
+- **Timetable Management** – View and manage generated timetables.
+- **Settings** – Configure timetable generation preferences.
 
-## Expanding the ESLint configuration
+## Tech Stack
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### Frontend
+- React.js
+- Vite
+- JavaScript
+- HTML5
+- CSS3
+
+### Backend
+- Node.js
+- Express.js
+
+### Database
+- MongoDB
+- Mongoose
+
+### Authentication
+- JSON Web Tokens (JWT)
+- Google OAuth (if configured)
+
+## Project Structure
+
+```text
+Automatic-Timetable-Generator/
+│
+├── public/
+├── src/
+│   ├── api/
+│   ├── assets/
+│   ├── components/
+│   ├── context/
+│   ├── pages/
+│   └── styles/
+│
+├── server/
+│   ├── config/
+│   ├── controllers/
+│   ├── models/
+│   ├── routes/
+│   └── services/
+│
+├── package.json
+├── README.md
+└── .gitignore
+```
+
+## Installation and Setup
+
+### Prerequisites
+
+- Node.js
+- npm
+- MongoDB database
+- Git
+
+### 1. Clone the repository
+
+```bash
+git clone https://github.com/NaincyShukla/Automatic-Timetable-Generator.git
+cd Automatic-Timetable-Generator
+```
+
+### 2. Install frontend dependencies
+
+```bash
+npm install
+```
+
+### 3. Install backend dependencies
+
+```bash
+cd server
+npm install
+```
+
+### 4. Configure environment variables
+
+Create a `.env` file inside the `server` directory.
+
+Configure the required environment variables:
+
+- MongoDB connection string
+- JWT secret
+- Google OAuth credentials (if required)
+- Server port
+
+Never upload actual credentials or API secrets to GitHub.
+
+### 5. Start the backend
+
+```bash
+cd server
+node server.js
+```
+
+### 6. Start the frontend
+
+Open another terminal in the project root:
+
+```bash
+npm run dev
+```
+
+## Environment Variables
+
+Refer to the environment example file for the required configuration.
+
+Actual environment files containing credentials are excluded from version control.
+
+## Future Improvements
+
+- Enhanced timetable optimization
+- Improved scheduling constraints
+- Timetable export functionality
+- Deployment and live demonstration
+
+## Author
+
+**Naincy Shukla**
+
+
+B.Tech – Computer Engineering
